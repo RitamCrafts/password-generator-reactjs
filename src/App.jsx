@@ -61,22 +61,24 @@ function App() {
             />
             <label>Length: {length}</label>
           </div>
-          <div className="right-side flex gap-1 ml-1">
+          <div className="right-side flex gap-1 ml-1 items-center">
             <input 
             type="checkbox"
             checked={numberAllowed}
-            className="accent-amber-500"
+            className="accent-amber-500 cursor-pointer"
             onChange={()=>setNumberAllowed((prev)=>!prev)}
+            id="number-allowed"
             />
-            <label className="mr-1">Numbers</label>
+            <label htmlFor="number-allowed" className="mr-1">Numbers</label>
 
             <input 
             type="checkbox"
             checked={specialAllowed}
-            className="accent-amber-500"
+            className="accent-amber-500 cursor-pointer"
             onChange={()=>setSpecialAllowed((prev)=>!prev)}
+            id="special-allowed"
             />
-            <label className="mr-1">Special</label>
+            <label htmlFor="special-allowed" className="mr-1">Special</label>
           </div>
 
 
