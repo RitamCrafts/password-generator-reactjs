@@ -55,7 +55,7 @@ function App() {
             type="range" 
             className="cursor-pointer accent-orange-500"
             value={length}
-            max={30}
+            max={40}
             min={3}
             onChange={(e)=>setlength(e.target.value)}
             />
