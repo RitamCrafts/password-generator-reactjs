@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className="h-screen w-screen bg-slate-950 p-2">
+    <div className="min-h-screen h-full w-full bg-slate-950 p-2">
       
       <div className=" bg-gray-900 container rounded-lg w-full max-w-md mx-auto mt-1 py-6 px-4 text-orange-400 shadow-md">
         <p className="text-center mb-2">Password Generator</p>
@@ -49,7 +49,7 @@ function App() {
           <button onClick={()=>copyPasswordToClipboard()} className="text-white bg-orange-400 outline-none px-3 cursor-pointer hover:opacity-80 active:opacity-55">Copy</button>
         </div>
 
-        <div className="line2 flex justify-between">
+        <div className="line2 flex flex-col sm:flex-row gap-3 sm:justify-between">
           <div className="left-side flex gap-1 mr-1">
             <input 
             type="range" 
